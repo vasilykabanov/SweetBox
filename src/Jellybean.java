@@ -10,19 +10,23 @@ public class Jellybean extends Sweets {
         this.color = color;
     }
 
-    @Override
-    public String toString() {
-        return "Jellybean{" +
-                "color='" + color +
-                '\'' +
-                '}';
-    }
-
     public String getColor() {
         return color;
     }
 
     public void setColor(String color) {
         this.color = color;
+    }
+
+    @Override
+    public String toString() {
+        return "Jellybean{" +
+                "color='" + color +
+                '\'' +
+                ", name=" + getName() +
+                ", weight=" + getWeight() +
+                ", price=" + getPrice() +
+                '}' +
+                "\n";
     }
 }

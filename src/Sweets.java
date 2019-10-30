@@ -40,11 +40,11 @@ abstract public class Sweets {
 
     @Override
     public String toString() {
-        return "Sweets{"
-                + "name='" + name +
-                '\'' + ", weight=" + weight +
-                ", price="
-                + price +
+        return "Sweets{" +
+                "name='" + name +
+                '\'' +
+                ", weight=" + weight +
+                ", price=" + price +
                 '}';
     }
 }

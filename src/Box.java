@@ -7,6 +7,8 @@ public interface Box {
 
     public void removeSweets(int index);
 
+    void removeLastElementSweets();
+
     public void printWeight();
 
     public void printBoxCost();

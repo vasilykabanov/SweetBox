@@ -17,10 +17,21 @@ public class SweetsBox implements Box {
 
     @Override
     public void removeSweets(int index) {
-        Sweets sweets = sweetsArrayList.get(index);
-        weightBox = weightBox - sweets.getWeight();
-        costBox = costBox - sweets.getPrice();
-        sweetsArrayList.remove(index);
+        if (sweetsArrayList.size() > index) {
+            Sweets sweets = sweetsArrayList.get(index);
+            weightBox = weightBox - sweets.getWeight();
+            costBox = costBox - sweets.getPrice();
+            sweetsArrayList.remove(index);
+        }else {
+            System.out.println("Такого элемента не существует!");
+        }
+    }
+
+    @Override
+    public void removeLastElementSweets() {
+        if (sweetsArrayList.size() > 0){
+            removeSweets(sweetsArrayList.size() - 1);
+        }
     }
 
     @Override
@@ -40,10 +51,9 @@ public class SweetsBox implements Box {
 
     @Override
     public String toString() {
-        return "SweetsBox{" +
+        return "SweetsBox: " +
                 "weightBox=" + weightBox +
-                ", costBox=" + costBox +
-                ", sweetsArrayList=" + sweetsArrayList +
-                '}';
+                ", costBox=" + costBox + "\n" +
+                "\n" + "sweetsArrayList=" + "\n" + sweetsArrayList;
     }
 }

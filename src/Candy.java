@@ -10,19 +10,23 @@ public class Candy extends Sweets {
         this.type = type;
     }
 
-    @Override
-    public String toString() {
-        return "Candy{" +
-                "type='" + type +
-                '\'' +
-                '}';
-    }
-
     public String getType() {
         return type;
     }
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    @Override
+    public String toString() {
+        return "Candy{" +
+                "type='" + type +
+                '\'' +
+                ", name=" + getName() +
+                ", weight=" + getWeight() +
+                ", price=" + getPrice() +
+                '}' +
+                "\n";
     }
 }

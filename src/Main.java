@@ -20,12 +20,9 @@ public class Main {
         sweetsBox.addSweets(jelly1);
         sweetsBox.addSweets(jelly2);
 
-        //print printWeigh, printBoxCost
-        sweetsBox.printWeight();
-        sweetsBox.printBoxCost();
-
         System.out.println();
 
+        //printALLInfoSweets
         sweetsBox.printALLInfoSweets();
 
         System.out.println();
@@ -34,14 +31,14 @@ public class Main {
         sweetsBox.removeSweets(2);
         sweetsBox.printALLInfoSweets();
 
+        //remove last element
+        sweetsBox.removeLastElementSweets();
+        sweetsBox.printALLInfoSweets();
+
         System.out.println();
 
         //print printWeigh, printBoxCost again
         sweetsBox.printWeight();
         sweetsBox.printBoxCost();
-
-
-
-
     }
 }

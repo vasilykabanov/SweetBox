@@ -5,7 +5,6 @@ public class Cake extends Sweets {
 
     private boolean cream;
 
-
     Cake(String name, int weight, double price, boolean cream) {
         super(name, weight, price);
         this.cream = cream;
@@ -23,6 +22,10 @@ public class Cake extends Sweets {
     public String toString() {
         return "Cake{" +
                 "cream=" + cream +
-                '}';
+                ", name=" + getName() +
+                ", weight=" + getWeight() +
+                ", price=" + getPrice() +
+                '}' +
+                "\n";
     }
 }
